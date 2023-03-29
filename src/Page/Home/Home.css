@@ -1,0 +1,264 @@
+.editSection {
+  min-height: calc(100vh - 60px);
+}
+
+.object-position {
+  object-position: 0px -75px;
+}
+.object-position-2 {
+  object-position: -0 -29px;
+}
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #ea4343;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #333,
+    #5a24be,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #333,
+    #ff0000,
+    #333,
+    rgb(0, 102, 255)
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(10px);
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: white;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #ea4343;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .reverceContral {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .reverceContral {
+    flex-direction: column-reverse;
+  }
+}
+.rotateText {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.roteeyNow {
+  transform: perspective(500px)  rotateX(-0deg);
+  animation: rotated-3 5s linear infinite alternate;
+}
+@keyframes rotated-3 {
+  0% {
+    transform: perspective(500px) scale(0.9) skew(-20deg) rotateX(-90deg);
+  }
+  5% {
+    transform: perspective(500px) rotateX(0deg);
+  }
+  45% {
+    transform: perspective(500px) rotateX(-30deg);
+  }
+  55% {
+    transform: perspective(500px) rotateX(30deg);
+  }
+  60% {
+    transform: perspective(500px) rotateX(-30deg);
+  }
+  65% {
+    transform: perspective(500px) rotateX(30deg);
+  }
+  90%{
+    transform: perspective(500px);
+  }
+  100% {
+    transform: perspective(500px) scale(0.9) skew(20deg) rotateX(90deg);
+  }
+}
+.mouseMove {
+  width: fit-content !important;
+  height: 50px !important;
+  object-fit: cover !important;
+  object-position: initial !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.mouseMove:nth-of-type(11) {
+  left: auto;
+  top: -10%;
+  right: 10%;
+}
+.mouseMove:nth-of-type(2) {
+  left: auto;
+  top: 45%;
+  right: -20%;
+}
+.mouseMove:nth-of-type(3) {
+  left: auto;
+  top: -20%;
+  right: 40%;
+}
+.mouseMove:nth-of-type(4) {
+  left: auto;
+  top: auto;
+  bottom: -15%;
+  right: 25%;
+}
+.mouseMove:nth-of-type(5) {
+  left: auto;
+  top: auto;
+  bottom: -0%;
+  right: -10%;
+}
+.mouseMove:nth-of-type(6) {
+  top: auto;
+  bottom: -0%;
+  left: -0%;
+}
+.mouseMove:nth-of-type(7) {
+  top: 10%;
+  bottom: auto;
+  right: -10%;
+  left: auto;
+}
+.mouseMove:nth-of-type(8) {
+  top: auto;
+  bottom: 30%;
+  left: -20%;
+}
+.mouseMove:nth-of-type(9) {
+  top: -10%;
+  bottom: auto;
+  left: -0%;
+}
+.mouseMove:nth-of-type(10) {
+  top: 20%;
+  bottom: auto;
+  left: -15%;
+}
+.mouseMove:nth-of-type(1) {
+  top: auto;
+  bottom: -20%;
+  left: 20%;
+}
+.ant-rate-star.ant-rate-star-full{
+  color: #ea4343;
+}
+.ant-rate-star.ant-rate-star-half.ant-rate-star-active .ant-rate-star-first{
+  color: #ea4343 !important;
+}
+.ant-rate-star.ant-rate-star-zero .ant-rate-star-first ,
+.ant-rate-star.ant-rate-star-half.ant-rate-star-active .ant-rate-star-second,
+.ant-rate-star.ant-rate-star-zero .ant-rate-star-second{
+  color: white !important;
+}
+:where(.css-dev-only-do-not-override-1s3dcof).ant-rate .ant-rate-star-first, :where(.css-dev-only-do-not-override-1s3dcof).ant-rate .ant-rate-star-second{
+  color: inherit !important;
+}
+.Typewriter__cursor {
+  color: white;
+}
+.enditEndRemoveControl {
+  transform: scale(0);
+  transform-origin: top right;
+  visibility: hidden;
+  opacity: 0;
+  transition: transform 0.3s, opacity 0.3s;
+}
+.enditEndRemoveControl.active {
+  transform: scale(1);
+  visibility: visible;
+  opacity: 1;
+  transition: transform 0.3s, opacity 0.3s;
+}
+.pEditControl {
+  display: none;
+  /* line-break: anywhere; */
+}
+.pEditControl.active {
+  display: block;
+}
+.formEditControl {
+  display: none;
+}
+.formEditControl.active {
+  display: block;
+}
+
+@media screen and (min-width: 767px) {
+  .object-position-2 {
+    object-position: 0px -75px;
+  }
+}
+.emojControl {
+  transform: scale(0);
+  transform-origin: bottom right;
+  visibility: hidden;
+  opacity: 0;
+  transition: transform 0.3s, opacity 0.3s;
+}
+.emojControl.active {
+  transform: scale(1);
+  visibility: visible;
+  opacity: 1;
+  transition: transform 0.3s, opacity 0.3s;
+}

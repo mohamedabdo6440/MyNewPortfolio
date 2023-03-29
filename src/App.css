@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+*{
+  font-family: 'Josefin Sans', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+#root {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+body{
+  background: #0f1922;
+  overflow-x: hidden;
+}
+.App {
+  min-height: 100vh;
+  display: grid;
+}
+.fullHight {
+  min-height: calc(100vh - 60px);
+}
+section {
+  padding: 4rem 0;
+}
+.containerEdit {
+  width: 80%;
+  margin: auto;
+}
+@media screen and (max-width: 640px) {
+  .containerEdit{
+    width: 90%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .containerEdit{
+    width: 728px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .containerEdit{
+    width: 70%;
+  }
+  
+}
+@media screen and (min-width: 1280px) {
+  .containerEdit{
+    width: 70%;
+  }
+}
+.Toastify {
+  position: fixed !important;
+  top: 10% !important;
+  z-index: 50!important;
 }
 
-.App-link {
-  color: #61dafb;
+.Toastify__toast-container--top-right {
+  top: 10% !important;
+  z-index: 50 !important;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.loadImg {
+  backdrop-filter: blur(139px);
+  background: #ffffff66;
+}
+aside.EmojiPickerReact.epr-main{
+  width: 100% !important;
+  height: 450px !important;
+}
+aside.EmojiPickerReact.epr-main:has(input:placeholder-shown) .epr-category-nav{
+  flex-wrap: wrap;
 }

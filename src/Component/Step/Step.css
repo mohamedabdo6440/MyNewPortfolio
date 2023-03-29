@@ -1,0 +1,33 @@
+.stepOpen {
+  transition: background-color 0.4s linear, margin 0.2s linear;
+  background-color: #490c86de;
+}
+.stepOpen.active {
+  background-color: #740cdc;
+  transition: background-color 0.4s linear, margin 0.2s linear;
+}
+/* .skill{
+    transform:  scaleY(0);
+    transform-origin: top;
+    transition: transform  .4s linear ;
+}
+.skill.active{
+    transform: scaleY(1);
+    transform-origin: top;
+    transition: transform .4s linear;
+} */
+.skill {
+  position: absolute;
+  right: 0;
+  left: 0;
+  /* bottom: calc(-100% - 25px); */
+  top: 100%;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.2s linear;
+}
+.skill.active {
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: transform 0.2s linear;
+}
