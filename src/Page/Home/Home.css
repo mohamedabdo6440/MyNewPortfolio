@@ -6,7 +6,7 @@
   object-position: 0px -75px;
 }
 .object-position-2 {
-  object-position: -0 -29px;
+  object-position: -0 0px;
 }
 .glow-on-hover {
   width: 220px;
@@ -246,7 +246,7 @@
 
 @media screen and (min-width: 767px) {
   .object-position-2 {
-    object-position: 0px -75px;
+    object-position: 0px 0px;
   }
 }
 .emojControl {

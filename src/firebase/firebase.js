@@ -1,6 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getAuth, signInWithPopup, signOut } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
+
 const firebaseConfig = {
   apiKey: "AIzaSyCJdiJGpJnnr-hfitLYzw2uGeYC5VVUkfI",
   authDomain: "myportfolio-2f63b.firebaseapp.com",
