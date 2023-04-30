@@ -76,7 +76,7 @@ const Home = memo(() => {
       if (roteey.current.innerText === "Front-End") {
         roteey.current.innerText = "Developer";
       } else if (roteey.current.innerText === "Developer") {
-        roteey.current.innerText = "UI UX";
+        roteey.current.innerText = "coding";
       } else {
         roteey.current.innerText = "Front-End";
       }

@@ -77,7 +77,12 @@ const Header = () => {
           <div className="logo flex  items-center gap-2">
             <img className="w-8" src="./img/7511325-ai.png" alt="" />
           </div>
-          <h2 className=" text-white pt-2 text-3xl">Mohamed Abdo</h2>
+          <h2
+            className=" text-white pt-2 text-3xl"
+            style={{ fontSize: "22px" }}
+          >
+            Mohamed Abdo
+          </h2>
         </Link>
         <div className="flex items-center gap-5">
           <ul className=" items-center gap-5 hidden md:flex">

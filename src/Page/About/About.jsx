@@ -34,7 +34,13 @@ const About = memo(() => {
             transition={{ duration: 0.4 }}
             className="mb-1"
           >
-            I have 2+ years of work experiance
+            I worked on restructuring some of the codes in several projects,
+            which helped reduce memory consumption by{" "}
+            <span style={{ color: "#40d340" }}>25%</span> to{" "}
+            <span style={{ color: "#40d340" }}>30%</span> of the space used in
+            applications. The total lines of code that I have written so far
+            have exceeded <span style={{ color: "#40d340" }}>29,300</span> lines
+            keeping in mind the solid prenciples.
           </motion.p>
           <motion.p
             initial={{ translateY: "150%" }}
@@ -42,7 +48,7 @@ const About = memo(() => {
             whileInView={{ translateY: 0 }}
             transition={{ duration: 0.4 }}
           >
-            In my journey to be a developer I have three steps{" "}
+            In my journey to be a developer I have three stepsd{" "}
           </motion.p>
         </div>
         <motion.h2
