@@ -14,10 +14,10 @@ const Contact = memo(() => {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_r56u0uv",
-        "template_u3v1vml",
+        "service_hbxm2r2",
+        "template_ynfwvbp",
         form.current,
-        "kFvkFMb5JZZQAuKXj"
+        "NEhT0PRvuR1rFE0AA"
       )
       .then(
         (result) => {
