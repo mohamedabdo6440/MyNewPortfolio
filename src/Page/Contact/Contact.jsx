@@ -21,12 +21,12 @@ const Contact = memo(() => {
       )
       .then(
         (result) => {
-          toast.success("Send Massage done", {
+          toast.success("Send Message done", {
             theme: "dark",
           });
           form.current.name.value = "";
           form.current.email.value = "";
-          form.current.massage.value = "";
+          form.current.message.value = "";
           form.current.feedBack.value = "";
         },
         (error) => {
@@ -93,7 +93,7 @@ const Contact = memo(() => {
               <BiMessage className="text-2xl text-white absolute top-[12px] left-[10px]" />
               <textarea
                 required
-                name="massage"
+                name="message"
                 onBlur={(e) => {
                   e.target.parentElement.querySelector("svg").style.color =
                     "#fff";
