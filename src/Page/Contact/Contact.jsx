@@ -15,7 +15,7 @@ const Contact = memo(() => {
     emailjs
       .sendForm(
         "service_hbxm2r2",
-        "template_ynfwvbp",
+        "template_xjexhxs",
         form.current,
         "NEhT0PRvuR1rFE0AA"
       )
@@ -24,6 +24,7 @@ const Contact = memo(() => {
           toast.success("Send Message done", {
             theme: "dark",
           });
+          form.current.subject.value = "";
           form.current.name.value = "";
           form.current.email.value = "";
           form.current.message.value = "";
@@ -50,6 +51,22 @@ const Contact = memo(() => {
     >
       <div className="review bg-[#0b1218] py-5 px-3 rounded-lg containerEdit pt-6 md:pt-8">
         <form className="contact " onSubmit={sendEmail} ref={form}>
+          <div className="relative flex mb-3">
+            <input
+              name="subject"
+              onBlur={(e) => {
+                e.target.parentElement.querySelector("svg").style.color =
+                  "#fff";
+              }}
+              onFocus={(e) => {
+                e.target.parentElement.querySelector("svg").style.color =
+                  "#ea4343";
+              }}
+              type="text"
+              placeholder="Subject"
+              className="text-white placeholder:text-[14px] w-full text-[14px] md:text-[16px] bg-[#060b10] pl-10 pr-4  py-3 outline-none rounded-lg"
+            />
+          </div>
           <div className="flex flex-col md:flex-row gap-3">
             <div className="w-full relative">
               <input
@@ -82,7 +99,7 @@ const Contact = memo(() => {
                     "#ea4343";
                 }}
                 type="email"
-                placeholder="Your Email"
+                placeholder="Your E-mail To Respond To Your Contact"
                 className="w-full placeholder:text-[14px] text-white text-[14px] md:text-[16px] bg-[#060b10] pl-10 pr-4  py-3 outline-none rounded-lg"
               />
               <AiOutlineMail className="text-2xl text-white absolute top-1/2 -translate-y-1/2 left-[10px]" />
