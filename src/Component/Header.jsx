@@ -102,14 +102,14 @@ const Header = () => {
             >
               <NavLink to="/about">about</NavLink>
             </li>
-            {/* <li
+            <li
               className="capitalize text-white font-semibold hover:text-[#ea4343] duration-700 "
               onClick={() => {
                 setOpen(false);
               }}
             >
               <NavLink to="/projects">projects</NavLink>
-            </li> */}
+            </li>
             <li
               className="capitalize text-white font-semibold hover:text-[#ea4343] duration-700 "
               onClick={() => {
@@ -135,15 +135,14 @@ const Header = () => {
             )}
           </div>
           <ul
-            className={`z-[1] bg-[#333] gap-5 fixed top-0 right-0 min-h-screen w-full select-none sm:w-1/2 flex  md:hidden px-9 duration-500  justify-center flex-col ${
-              open ? "right-0" : "right-[-100%]"
-            }`}
+            className={`z-[1] bg-[#333] gap-5 fixed top-0 right-0 min-h-screen w-full select-none sm:w-1/2 flex  md:hidden px-9 duration-500  justify-center flex-col ${open ? "right-0" : "right-[-100%]"
+              }`}
           >
             <div className="logo flex  items-center gap-2 pb-8 pl-8 relative w-fit ">
               <img className="w-11" src="./img/7511325-ai.png" alt="" />
-              <div className="circle w-[120px]">
+              {/* <div className="circle w-[120px]">
                 <img src="./img/circleName.png" alt="" />
-              </div>
+              </div> */}
             </div>
             <li
               className="capitalize text-white hover:text-[#ea4343] duration-700"
@@ -161,14 +160,14 @@ const Header = () => {
             >
               <Link to="/about">about</Link>
             </li>
-            {/* <li
+            <li
               className="capitalize text-white hover:text-[#ea4343] duration-700"
               onClick={() => {
                 setOpen(false);
               }}
             >
               <Link to="/projects">projects</Link>
-            </li> */}
+            </li>
             <li
               className="capitalize text-white hover:text-[#ea4343] duration-700"
               onClick={() => {
