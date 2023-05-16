@@ -13,9 +13,9 @@ const Pagenation = memo(({ data, nextPage }) => {
             {data &&
                 numOfPagenation.length > 1 &&
                 numOfPagenation.map(btn => btn === 0 ?
-                    <button className='btnPagenation active w-8 h-8 flex items-end justify-center text-white border-[#ea4343] border-[2px] bg-transparent rounded-full' onClick={(e) => { nextPage(btn,e) }} key={btn}>{btn + 1}</button>
-            :
-            <button className='btnPagenation w-8 h-8 flex items-end justify-center text-white border-[#ea4343] border-[2px] bg-transparent rounded-full' onClick={(e) => { nextPage(btn,e) }} key={btn}>{btn + 1}</button>)}
+                    <button className='btnPagenation  w-8 h-8 flex items-end justify-center text-white border-[#ea4343] border-[2px] bg-transparent rounded-full' onClick={(e) => { nextPage(btn, e) }} key={btn}>{btn + 1}</button>
+                    :
+                    <button className={`btnPagenation w-8 h-8 flex items-end justify-center text-white border-[#ea4343] border-[2px] bg-transparent rounded-full `} onClick={(e) => { nextPage(btn, e) }} key={btn}>{btn + 1}</button>)}
         </div>
     );
 });
