@@ -60,7 +60,7 @@ const Project = memo(({ data }) => {
                     <div className=" z-20 absolute productHover flex items-end justify-center pb-2 ">
                         <div className="flex gap-3 justify-center button-90">
                             {/* <a target="_blank" className='button-92' href={data.github} rel="noreferrer">Github</a> */}
-                            <a target="_blank" className='button-92' href={data.demoLink} rel="noreferrer">Visit Demo</a>
+                            <a target="_blank" className='button-92' href={data.demoLink} rel="noreferrer">Visit Live Demo</a>
                         </div>
                     </div>
                 </div>
